@@ -1,0 +1,9 @@
+# Desenvolver o crawler
+
+# Transformar os dados com Pandas 
+    - Lower no name
+    - Decimal no valor do produto.
+    - Adicionar _extract_date
+
+#No dbt vamos criar o modelo para criar as colunas novas de brand & model
+       

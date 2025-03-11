@@ -1,0 +1,3 @@
+products.css('h3.poly-component__title-wrapper a::text').get()
+
+Pq temos "a::text"? Pq esse h3 está aninhado junto de um a href, portanto é necessário descer a hierarquia

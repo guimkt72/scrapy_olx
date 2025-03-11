@@ -1,0 +1,26 @@
+Commands =
+
+inciiando o projeto:
+scrapy startproject <nome_do_projeto>
+
+Depois disso, entre na pasta criada, no meu caso: "extract"
+
+Após:
+scrapy genspider <nome_do_site> <link_do_site>
+
+no meu caso:
+
+scrapy genspider mercadolivre https://lista.mercadolivre.com.br/informatica/componentes-pc/placas/placas-video/usado/rtx-3060ti_NoIndex_True
+
+Depois entender o que é genspider/spider
+(Spider é tipo uma teia de aranha, ele tem etapas, como entrar no site, fazer o parse (de-para), next-page)
+
+scrapy shell = Inicializa o shell
+
+fetch(url) = acessa ao site
+
+scrapy crawl mercadolivre -o data.jsonl = Salva com o "-o" o data.jsonl salva no mesmo dir, ou selecione um dir
+
+products = response.css('div.poly-card__content')
+
+products.css('span.poly-reviews__total::text').get()
